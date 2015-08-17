@@ -30,9 +30,12 @@
 
 **使用步骤**
 
-***1.下载SLS和源码安装包***
+***1.下载SLS,并mv到你设置的file_roots和pillar_roots对应的位置***
 ```ObjectiveC
 # git clone https://github.com/unixhot/saltstack-openstack-yum
+# cd saltstack-openstack-yum/
+# mv openstack /srv/salt/prod/
+# mv pillar/* /srv/pillar/prod/
 ```
 
 **2.修改Pillar目录的各个服务的配置**
