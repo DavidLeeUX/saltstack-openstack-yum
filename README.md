@@ -83,4 +83,11 @@ base:
     - opensack.cinder.server
   'horizon':
     - openstack.horizon.server
+
+##已知Bug
+
+* Neutron的neutron.conf需要获取service的tenant id后，手动设置
+    keystone tenant-list | awk '/ service / { print $2 }'
+    nova_admin_tenant_id =
+    
   
