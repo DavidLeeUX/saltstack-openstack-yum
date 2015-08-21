@@ -34,8 +34,8 @@
 ```ObjectiveC
 # git clone https://github.com/unixhot/saltstack-openstack-yum
 # cd saltstack-openstack-yum/
-# mv openstack /srv/salt/
-# mv pillar/* /srv/pillar/
+# mv states/* /srv/salt/base
+# mv pillar/* /srv/pillar/base
 ```
 
 **2.修改Pillar目录的各个服务的配置**
