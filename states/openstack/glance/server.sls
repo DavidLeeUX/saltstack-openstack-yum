@@ -6,7 +6,7 @@ glance-install:
       - openstack-glance 
       - python-glanceclient
     - require: 
-      - pkg: yum_repo_release
+      - file: rdo_repo
 
 /etc/glance:
   file.recurse:
