@@ -13,7 +13,7 @@ nova-control-install:
       - openstack-nova-scheduler
       - python-novaclient
     - require:
-      - pkg: yum_repo_release
+      - file: rdo_repo
 
 nova-db-sync:
   cmd.run:
