@@ -15,9 +15,8 @@ ntp-service:
 yum_repo_release:
   pkg.installed:
     - sources:
-      - epel-release: http://mirrors.aliyun.com/epel/6/x86_64/epel-release-6-8.noarch.rpm
       - rdo-release-icehouse-4: http://repos.fedorapeople.org/repos/openstack/EOL/openstack-icehouse/rdo-release-icehouse-4.noarch.rpm
-    - unless: rpm -qa | grep epel-release-6-8 && rpm -qa | grep rdo-release-icehouse-4
+    - unless: rpm -qa | grep rdo-release-icehouse-4
 
 epel_repo:
   file.managed:
