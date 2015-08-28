@@ -7,7 +7,7 @@ keystone-install:
       - openstack-keystone
       - python-keystoneclient
     - require: 
-      - pkg: yum_repo_release
+      - file: rdo_repo
 
 /etc/keystone:
   file.recurse:
